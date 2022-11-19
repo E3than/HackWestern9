@@ -6,10 +6,11 @@ function App() {
     <div className="App">
       <Navbar />
       <div className="content">
-        <h1>Input URL to find bots</h1>
+        <h1>Detect bots with ease</h1>
+        <h2>Input URL To Find Bots</h2>
         <form>
           <input type="text"></input>
-          <button type="submit">find bots</button>
+          <button type="submit">Find Bots</button>
         </form>
       </div>
     </div>
