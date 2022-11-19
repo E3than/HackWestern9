@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from "./components/navbar/navbar";
 
@@ -6,14 +5,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <header className="header">
-        <div className="header-content">
-          <div className="icon"></div>
-          <div className="title">sample text</div>
-          <div className="wAI-logo"></div>
-        </div>
-      </header>
       <div className="content">
+        <h1>Input URL to find bots</h1>
         <form>
           <input type="text"></input>
           <button type="submit">find bots</button>

@@ -1,15 +1,18 @@
 .nav {
-    background-color: #333;
-    color: white;
+    background-color: white;
+    color: whitesmoke;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
     gap: 2rem;
     padding: 0 1rem;
+    border-bottom: black solid 2px;
+    box-shadow: 0px 0px 5px 2px #9389eb ;
+    font-family: Kanit, sans-serif;
 }
 
 .site-title {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -22,18 +25,39 @@
 }
 
 .nav a {
-    color: inherit;
+    color: whitesmoke;
+    background: -webkit-linear-gradient(top left, #77c3ff, #9389eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-decoration: none;
     height: 100%;
-    display: flex;
-    align-items: center;
     padding: .25rem;
     text-align: center;
+    text-justify: center;
+}
 
+.nav li {
+    height: 6rem;
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    text-align: bottom;
+    text-justify:distribute;
 }
 
 .nav li:hover {
     background-color: #9159eb;
     border-radius: 25px;
+}
 
+.wai-logo {
+    height: 6rem;
+}
+
+.wai-logo:hover {
+    cursor: pointer;
+    opacity: 85%;
+}
+
+.nav a:hover {
+    opacity: 85%;
 }

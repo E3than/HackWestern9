@@ -2,17 +2,7 @@
   text-align: center;
 }
 
-.header {
-  display: flex;
-}
-
-.header-content {
-  width: 100%;
-  height: 128px;
-  justify-content: center;
-  align-items: center;
-}
-
-.title {
-  font-size: 64px;
+/* trying to create a border with colour linear-gradient(top left, #77c3ff, #9389eb) */
+input {
+  border: linear-gradient(#77c3ff, #9389eb);
 }
