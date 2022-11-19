@@ -4,10 +4,14 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        header stuff here
+      <header className="header">
+        <div className="header-content">
+          <div className="icon"></div>
+          <div className="title">sample text</div>
+          <div className="wAI-logo"></div>
+        </div>
       </header>
-      <div className="Content">
+      <div className="content">
         <form>
           <input type="text"></input>
           <button type="submit">find bots</button>
