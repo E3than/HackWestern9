@@ -16,8 +16,6 @@ if (url.split("?")[0] === "https://www.youtube.com/watch") {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  console.log(getCurrentTab());
-  console.log(getCurrentTab().url);
   document.getElementById("max").addEventListener("click", function () {
     if (state == 0) {
       document.body.style.width = "500px";
@@ -45,9 +43,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-async function getCurrentTab() {
-  let queryOptions = { active: true, lastFocusedWindow: true };
-  let [tab] = await chrome.tabs.query(queryOptions);
-  return tab;
-}
