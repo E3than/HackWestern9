@@ -1,0 +1,20 @@
+{
+   "name":"HackWestern",
+   "description":"determine semantics of youtube video",
+   "version": "1.0",
+   "manifest_version": 3,
+   "content_scripts": [
+      {
+         "matches": [
+            "<all_urls>"
+         ],
+         "js": ["popup.js"]
+      }
+   ],
+   "action": {
+      "default_title": "popup",
+      "default_popup": "popup.html"
+   }
+   
+
+   }
