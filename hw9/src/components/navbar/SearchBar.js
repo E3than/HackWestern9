@@ -4,6 +4,14 @@ const SearchBar = () => {
   const [sentiment, setSentiment] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
+  const toggleIsLoading = () => {
+    if (url === "") {
+    }
+    else {
+      setIsLoading(true);
+    }
+  }
+
   const getTranscript = (e) => {
     e.preventDefault();
     const urlSearchParams = new URLSearchParams(url.split("?")[1]);
@@ -13,6 +21,7 @@ const SearchBar = () => {
       .then((responseData) => {
         console.log(responseData);
         setSentiment(responseData);
+        setIsLoading(false);
       });
   };
   return (
@@ -25,9 +34,10 @@ const SearchBar = () => {
           onChange={(e) => setUrl(e.target.value)}
           type="text"
         ></input>
-        <button type="submit">Get Sentiment</button>
+        <button type="submit" onClick={toggleIsLoading}>Get Sentiment</button>
+        {isLoading && <div class="lds-ring"><div></div><div></div><div></div><div></div></div>}
       </form>
-      <h2>{sentiment === "" ? "" : `${sentiment}%`}</h2>
+      <h3>{sentiment === "" ? "" : `${sentiment}%`}</h3>
     </div>
   );
 };

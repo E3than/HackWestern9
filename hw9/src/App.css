@@ -7,9 +7,9 @@ input {
   border-image-source: linear-gradient(#77c3ff, #9389eb);
   border-width: 2.5pt;
   border-image-slice: 1;
-  position:fixed;
-  left: 75pt;
-  top: 320pt;
+  position: fixed;
+  left: 100pt;
+  top: 300pt;
   width: 500px;
   height: 50px;
   font-size: 24px;
@@ -23,8 +23,8 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: fixed;
-  left: 75pt;
-  top: 230pt;
+  left: 100pt;
+  top: 200pt;
   font-family: "Avenir Next", sans-serif;
   font-weight: 900;
   font-size: 50px;
@@ -32,12 +32,13 @@ h1 {
   font-style: italic;
   letter-spacing: 0.05em;
   display: inline-block;
+  -webkit-text-stroke: 0.25px;
 }
 
 h2 {
-  position:fixed;
-  left: 75pt;
-  top: 280pt;
+  position: fixed;
+  left: 100pt;
+  top: 250pt;
   font-size: 30px;
   font-weight: 900;
   font-family: "Avenir Next", sans-serif;
@@ -45,15 +46,27 @@ h2 {
   color: #9389eb;
 }
 
+h3 {
+  position: fixed;
+  left: 150pt;
+  top: 350pt;
+  font-size: 150px;
+  font-weight: 900;
+  font-family: "Avenir Next", sans-serif;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+  color: #9389eb;
+}
+
 button {
   position: fixed;
-  left: 475pt;
-  top: 325pt;
+  left: 500pt;
+  top: 305pt;
   font-size: 24px;
   font-family: "Avenir Next", sans-serif;
   font-weight: bold;
   color: #9389eb
-
 }
 
 body {

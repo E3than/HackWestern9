@@ -6,6 +6,7 @@ from nltk.tokenize import sent_tokenize
 from .utils.punctuate import punctuate
 from .utils.sentiment import get_sentiment
 from .utils.summarize import summarize_text
+import nltk
 
 app = FastAPI()
 
@@ -15,6 +16,8 @@ except AttributeError:
     pass
 else:
     ssl._create_default_https_context = _create_unverified_https_context
+
+nltk.download()
 
 
 origins = [
