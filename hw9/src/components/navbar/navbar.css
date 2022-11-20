@@ -45,8 +45,7 @@
 }
 
 .nav li:hover {
-    background-color: #CBC3E3;
-    border-radius: 25px;
+    opacity: 85%
 }
 
 .wai-logo {
