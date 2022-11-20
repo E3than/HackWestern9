@@ -7,7 +7,7 @@ const Navbar = () => {
         <nav className='nav'>
             <img src={logo} alt='western ai logo' className='wai-logo' href="/"></img>
             <a href="/" className='site-title'>
-                Youtube Bot Detector
+                Youtube Sentiment Analysis
             </a>
             <ul>
                 <li>
