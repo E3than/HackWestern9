@@ -37,9 +37,9 @@
 }
 
 .nav li {
-    height: 6rem;
+    /*height: 6rem;*/
     font-size: 2rem;
-    padding-top: 1.5rem;
+    /*margin-top: 2rem;*/
     text-align: bottom;
     text-justify:distribute;
 }
