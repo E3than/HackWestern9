@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 const SearchBar = () => {
   const [url, setUrl] = useState("");
-  const [sentiment, setSentiment] = useState([]);
+  const [sentiment, setSentiment] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
   const getTranscript = (e) => {
@@ -27,7 +27,7 @@ const SearchBar = () => {
         ></input>
         <button type="submit">Get Sentiment</button>
       </form>
-      <h2>{sentiment}%</h2>
+      <h2>{sentiment === "" ? "" : `${sentiment}%`}</h2>
     </div>
   );
 };
